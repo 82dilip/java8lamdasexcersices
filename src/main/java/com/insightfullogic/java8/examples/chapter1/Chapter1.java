@@ -27,9 +27,19 @@ public class Chapter1 extends MusicChapter {
     }
     
     public List<Artist> artistsLivingInLondon() {
-        return artists.stream()
-                      .filter(artist -> "London".equals(artist.getNationality()))
+        return (List<Artist>) artists.stream()
+                      .filter(                  	  
+                    	  artist -> {
+                    		  //System.out.println(artists.toString());
+                    		  return "UK".equals(artist.getNationality());
+                    	  })
                       .collect(Collectors.toList());
     }
 
+    public static void main(String[] args) {
+		System.out.println(new Chapter1().getNamesOfArtists_Lambda());
+		//System.out.println(new Chapter1().getNamesOfArtists_MethodReference());
+		System.out.println(new Chapter1().artistsLivingInLondon());
+		
+	}
 }

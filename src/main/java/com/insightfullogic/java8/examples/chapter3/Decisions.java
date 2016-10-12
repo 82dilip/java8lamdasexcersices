@@ -28,6 +28,7 @@ public class Decisions {
     }
 
     public Set<String> originsOfBands(Album album) {
+    	
         // BEGIN origins_of_bands
 Set<String> origins = album.getMusicians()
                            .filter(artist -> artist.getName().startsWith("The"))

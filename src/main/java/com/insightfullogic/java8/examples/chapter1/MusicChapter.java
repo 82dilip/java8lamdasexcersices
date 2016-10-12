@@ -24,6 +24,16 @@ public abstract class MusicChapter {
     }
 
     private void loadData(String file) {
+        artists.add(SampleData.johnColtrane);
+        artists.add(SampleData.georgeHarrison);
+        artists.add(SampleData.johnLennon);
+        artists.add(SampleData.paulMcCartney);
+        artists.add(SampleData.ringoStarr);
+        artists.add(SampleData.theBeatles);
+        
+        albums.add(SampleData.aLoveSupreme);
+        albums.add(SampleData.manyTrackAlbum);
+        albums.add(SampleData.sampleShortAlbum);
         
     }
     

@@ -6,6 +6,7 @@ public class GeneratingStreams {
 
     public static void main(String[] args) {
         iterate();
+        generate();
     }
 
     static void generate() {
