@@ -19,7 +19,7 @@ public class SampleData {
 
     public static final Artist theBeatles = new Artist("The Beatles", membersOfTheBeatles, "UK");
 
-    public static final Album aLoveSupreme = new Album("A Love Supreme", asList(new Track("Acknowledgement", 467), new Track("Resolution", 442)), asList(johnColtrane));
+    public static final Album aLoveSupreme = new Album("A Love Supreme", asList(new Track("Acknowledgement", 467), new Track("Resolution", 442)), asList(johnColtrane,theBeatles));
 
     public static final Album sampleShortAlbum = new Album("sample Short Album", asList(new Track("short track", 30)), asList(johnColtrane));
 
@@ -35,4 +35,7 @@ public class SampleData {
         return Arrays.asList(johnColtrane, johnLennon, theBeatles);
     }
 
+    public static List<Album> getAlbum(){
+    	return Arrays.asList(aLoveSupreme, sampleShortAlbum, manyTrackAlbum);
+    }
 }
